@@ -1,0 +1,10 @@
+.calendar-embed {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calendar-embed iframe {
+    width: 100%;
+    border: none;
+}
