@@ -17,6 +17,12 @@ function elementor_calendar_embed_settings_html() {
         return;
     }
 
+    // Display a notice about GitHub Updater
+    echo '<div class="notice notice-info">';
+    echo '<p>To enable auto-updates for this plugin, install the <a href="https://github.com/afragen/github-updater" target="_blank">GitHub Updater</a> plugin.</p>';
+    echo '</div>';    
+    
+    
     if (isset($_POST['elementor_calendar_embed_options'])) {
         update_option('google_calendar_api_key', sanitize_text_field($_POST['google_calendar_api_key']));
         update_option('microsoft_calendar_client_id', sanitize_text_field($_POST['microsoft_calendar_client_id']));
