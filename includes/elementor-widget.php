@@ -154,40 +154,47 @@ $this->add_control(
             ]
         );
 
-        $this->add_control(
-            'calendar_height',
-            [
-                'label' => __('Height', 'elementor-calendar-embed'),
-                'type' => \Elementor\Controls_Manager::SLIDER,
-                'size_units' => ['px', '%', 'rem', 'em'],
-                'range' => [
-                    'px' => [
-                        'min' => 100,
-                        'max' => 1000,
-                    ],
-                    '%' => [
-                        'min' => 10,
-                        'max' => 100,
-                    ],
-                    'rem' => [
-                        'min' => 1,
-                        'max' => 50,
-                    ],
-                    'em' => [
-                        'min' => 1,
-                        'max' => 50,
-                    ],
-                ],
-                'default' => [
-                    'unit' => 'px',
-                    'size' => 600,
-                ],
-                'selectors' => [
-                    '{{WRAPPER}} .calendar-embed iframe' => 'height: {{SIZE}}{{UNIT}};',
-                ],
-            ]
-        );
-
+$this->add_control(
+    'calendar_height',
+    [
+        'label' => __('Height', 'elementor-calendar-embed'),
+        'type' => \Elementor\Controls_Manager::SLIDER,
+        'size_units' => ['px', '%', 'rem', 'em', 'vh', 'vw'], // Add vh and vw
+        'range' => [
+            'px' => [
+                'min' => 100,
+                'max' => 1000,
+            ],
+            '%' => [
+                'min' => 10,
+                'max' => 100,
+            ],
+            'rem' => [
+                'min' => 1,
+                'max' => 100, // Increase the max value
+            ],
+            'em' => [
+                'min' => 1,
+                'max' => 100, // Increase the max value
+            ],
+            'vh' => [
+                'min' => 10,
+                'max' => 100,
+            ],
+            'vw' => [
+                'min' => 10,
+                'max' => 100,
+            ],
+        ],
+        'default' => [
+            'unit' => 'px',
+            'size' => 600,
+        ],
+        'selectors' => [
+            '{{WRAPPER}} .calendar-embed iframe' => 'height: {{SIZE}}{{UNIT}};',
+        ],
+    ]
+);
 
 // Border Radius
 $this->add_control(
