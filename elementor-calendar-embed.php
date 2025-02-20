@@ -27,6 +27,3 @@ function elementor_calendar_embed_scripts() {
     wp_enqueue_script('elementor-calendar-embed-script', plugins_url('assets/js/script.js', __FILE__), array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'elementor_calendar_embed_scripts');
-// Include GitHub Updater
-
-//require_once __DIR__ . '/github-updater.php';
