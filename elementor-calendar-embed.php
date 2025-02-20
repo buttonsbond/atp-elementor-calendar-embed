@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ATP Elementor Calendar Embed
  * Description: Embed Google Calendar, Microsoft Calendar, and Calendly into Elementor Pro.
- * Version: 1.3
+ * Version: 1.4
  * Author: Mark van Bellen, All Tech Plus, Rojales
  * GitHub Plugin URI: https://github.com/buttonsbond/atp-elementor-calendar-embed
  * Primary Branch: main
