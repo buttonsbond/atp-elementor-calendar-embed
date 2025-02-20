@@ -154,12 +154,12 @@ $this->add_control(
             ]
         );
 
-$this->add_control(
+$this->add_responsive_control(
     'calendar_height',
     [
         'label' => __('Height', 'elementor-calendar-embed'),
         'type' => \Elementor\Controls_Manager::SLIDER,
-        'size_units' => ['px', '%', 'rem', 'em', 'vh', 'vw'], // Add vh and vw
+        'size_units' => ['px', '%', 'rem', 'em', 'vh', 'vw'],
         'range' => [
             'px' => [
                 'min' => 100,
@@ -171,11 +171,11 @@ $this->add_control(
             ],
             'rem' => [
                 'min' => 1,
-                'max' => 100, // Increase the max value
+                'max' => 100,
             ],
             'em' => [
                 'min' => 1,
-                'max' => 100, // Increase the max value
+                'max' => 100,
             ],
             'vh' => [
                 'min' => 10,
@@ -195,9 +195,9 @@ $this->add_control(
         ],
     ]
 );
-
+    
 // Border Radius
-$this->add_control(
+$this->add_responsive_control(
     'iframe_border_radius',
     [
         'label' => __('Border Radius', 'elementor-calendar-embed'),
@@ -232,7 +232,7 @@ $this->add_control(
 );
 
 // Padding
-$this->add_control(
+$this->add_responsive_control(
     'widget_padding',
     [
         'label' => __('Padding', 'elementor-calendar-embed'),
